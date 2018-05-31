@@ -1,0 +1,164 @@
+/*HTML5 reset */
+html,body,div,header,ul{
+    margin:0;
+    padding: 0;
+    border:0;   
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+    }
+button{
+    background:transparent;
+    outline:none;
+    border:0;
+}    
+body{
+    font-family: 'Open Sans',sans-serif;
+    min-height: 1000px;
+}
+.grey-bar{
+    background-color: #F5F5F5;
+    height:35px;
+    line-height:35px;
+}
+.container{
+    width:1440px;
+    margin:0 auto;
+    max-width: 94%;
+}
+#sub-nav{
+    float: right;
+}
+#sub-nav li{
+    display: inline-block;
+    }
+#sub-nav li:not(:last-of-type){
+margin-right:15px;
+}
+    #sub-nav li a{
+    color: #333;
+    font-size:12px;
+    text-decoration: none;
+}
+input[name="search"]{
+    font-size:12px;
+}
+  /*for second nav bar */
+ .logo-bar{
+     background-color: #ffffff;
+     font-size:15px;
+     margin:10px;
+     padding-top:1px;
+     height:50px;
+     color:inherit;    
+}
+ #second-bar > li{
+    display: inline;
+    float:left;
+    padding:5px;
+}
+  #main-navigation {
+      float: right;  
+  }
+  #second-bar #demo-button{
+      background-color:#FFAF4B;
+      border-radius: 3px;
+      margin-left:13px;
+    border-width: 3px;
+      color:white;
+      width:110px;
+      text-height:35px;
+    padding:14px;
+    }
+  .container #logo img{
+      width:84px;
+      padding:12px;
+      height:35px 40px 35px 40px;
+        margin-right:14px;
+    }
+#second-bar a{
+    text-decoration:none;
+}
+/*for the announcement gartner report */
+.announcement{
+    padding:2px;
+    text-align:center;
+    background-color:#ef5645;
+    height:60px;
+}
+#announcing #company handling{
+    margin:2px;
+}
+p .gartner-report{
+    cursor: pointer;
+    background-color: #333;
+    text-decoration-color: white;
+    border-radius:4px;
+    margin-left:15px;
+    padding:8px 25px 9px 25px;
+    color:white;
+    font-size:15px;
+}
+/*dropdowns */
+#second-bar > li > ul{
+display:none;
+background-color: white;
+width:400px;
+border:1px solid #e8e8e8 ;
+border-top:0px;
+border-radius:0 0 4px 4px;
+position:absolute;
+margin:0;
+top:100%;
+left:0px;
+padding:15px;
+}
+#second-bar > li:hover > ul{
+display:block;
+}
+#second-bar > li {
+position:relative;    
+line-height:45px;
+}
+#second-bar > li >ul >li {
+    display: block;
+}
+#second-bar > li >ul >li >ul {
+    list-style-type: none;
+}
+#second-bar > li:hover{
+    background-color:#3A78A1;
+}
+#second-bar > li:hover>a{
+color:white;
+}
+.hero .img{
+    float: left;
+    position: absolute;
+    width:10%;
+}
+.hero-container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    width:900px;
+    text-align: center;    
+}
+.hero-container h1{
+    font-size: 48px;
+}
+.hero-container p{
+    font-size: 17px;
+}
+#hero{
+    position: relative;
+    background-image: url(https://www.etq.com/images/layout/splash-reliance100.png);
+    height:300px;
+}
+#changing-text{
+    width: 400px;
+    display: inline-block;
+    text-align:left;
+}
