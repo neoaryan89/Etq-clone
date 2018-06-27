@@ -1,164 +1,378 @@
 /*HTML5 reset */
-html,body,div,header,ul{
-    margin:0;
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+html, body, div, header, ul {
+    margin: 0;
     padding: 0;
-    border:0;   
-    font-size:100%;
-    font:inherit;
-    vertical-align:baseline;
-    }
-button{
-    background:transparent;
-    outline:none;
-    border:0;
-}    
-body{
-    font-family: 'Open Sans',sans-serif;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
     min-height: 1000px;
 }
-.grey-bar{
+
+.grey-bar {
     background-color: #F5F5F5;
-    height:35px;
-    line-height:35px;
+    height: 35px;
+    line-height: 35px;
 }
-.container{
-    width:1440px;
-    margin:0 auto;
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
     max-width: 94%;
+    position: relative;
 }
-#sub-nav{
+
+#sub-nav {
     float: right;
 }
-#sub-nav li{
+
+#sub-nav li {
     display: inline-block;
-    }
-#sub-nav li:not(:last-of-type){
-margin-right:15px;
 }
-    #sub-nav li a{
+
+#sub-nav li:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+#sub-nav li a {
     color: #333;
-    font-size:12px;
+    font-size: 12px;
     text-decoration: none;
 }
-input[name="search"]{
-    font-size:12px;
+
+input[name="search"] {
+    font-size: 12px;
 }
-  /*for second nav bar */
- .logo-bar{
-     background-color: #ffffff;
-     font-size:15px;
-     margin:10px;
-     padding-top:1px;
-     height:50px;
-     color:inherit;    
+
+/*for second nav bar */
+
+.logo-bar {
+    background-color: #ffffff;
+    font-size: 15px;
+    margin: 10px;
+    padding-top: 1px;
+    height: 50px;
+    color: inherit;
 }
- #second-bar > li{
+
+#second-bar>li {
     display: inline;
-    float:left;
-    padding:5px;
+    float: left;
+    padding: 5px;
 }
-  #main-navigation {
-      float: right;  
-  }
-  #second-bar #demo-button{
-      background-color:#FFAF4B;
-      border-radius: 3px;
-      margin-left:13px;
+
+#main-navigation {
+    float: right;
+}
+
+#second-bar #demo-button {
+    background-color: #FFAF4B;
+    border-radius: 3px;
+    margin-left: 13px;
     border-width: 3px;
-      color:white;
-      width:110px;
-      text-height:35px;
-    padding:14px;
-    }
-  .container #logo img{
-      width:84px;
-      padding:12px;
-      height:35px 40px 35px 40px;
-        margin-right:14px;
-    }
-#second-bar a{
-    text-decoration:none;
+    color: white;
+    width: 110px;
+    text-height: 35px;
+    padding: 14px;
 }
+
+.container #logo img {
+    width: 84px;
+    padding: 12px;
+    height: 35px 40px 35px 40px;
+    margin-right: 14px;
+}
+
+#second-bar a {
+    text-decoration: none;
+}
+
 /*for the announcement gartner report */
-.announcement{
-    padding:2px;
-    text-align:center;
-    background-color:#ef5645;
-    height:60px;
+
+.announcement {
+    padding: 2px;
+    text-align: center;
+    background-color: #ef5645;
+    height: 60px;
 }
-#announcing #company handling{
-    margin:2px;
+
+#announcing #company handling {
+    margin: 2px;
 }
-p .gartner-report{
+
+p .gartner-report {
     cursor: pointer;
     background-color: #333;
     text-decoration-color: white;
-    border-radius:4px;
-    margin-left:15px;
-    padding:8px 25px 9px 25px;
-    color:white;
-    font-size:15px;
+    border-radius: 4px;
+    margin-left: 15px;
+    padding: 8px 25px 9px 25px;
+    color: white;
+    font-size: 15px;
 }
+
 /*dropdowns */
-#second-bar > li > ul{
-display:none;
-background-color: white;
-width:400px;
-border:1px solid #e8e8e8 ;
-border-top:0px;
-border-radius:0 0 4px 4px;
-position:absolute;
-margin:0;
-top:100%;
-left:0px;
-padding:15px;
+
+#second-bar>li>ul {
+    display: none;
+    background-color: white;
+    width: 400px;
+    border: 1px solid #e8e8e8;
+    border-top: 0px;
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    margin: 0;
+    top: 100%;
+    left: 0px;
+    padding: 15px;
 }
-#second-bar > li:hover > ul{
-display:block;
-}
-#second-bar > li {
-position:relative;    
-line-height:45px;
-}
-#second-bar > li >ul >li {
+
+#second-bar>li:hover>ul {
     display: block;
 }
-#second-bar > li >ul >li >ul {
+
+#second-bar>li {
+    position: relative;
+    line-height: 45px;
+}
+
+#second-bar>li>ul>li {
+    display: block;
+}
+
+#second-bar>li>ul>li>ul {
     list-style-type: none;
 }
-#second-bar > li:hover{
-    background-color:#3A78A1;
+
+#second-bar>li:hover {
+    background-color: #3A78A1;
 }
-#second-bar > li:hover>a{
-color:white;
+
+#second-bar>li:hover>a {
+    color: white;
 }
-.hero .img{
+
+.hero .img {
     float: left;
     position: absolute;
-    width:10%;
+    width: 10%;
 }
+
 .hero-container {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    color:white;
-    width:900px;
-    text-align: center;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 900px;
+    text-align: center;
 }
-.hero-container h1{
+
+.hero-container h1 {
     font-size: 48px;
 }
-.hero-container p{
+
+.hero-container p {
     font-size: 17px;
+    1
 }
-#hero{
+
+#hero {
     position: relative;
     background-image: url(https://www.etq.com/images/layout/splash-reliance100.png);
-    height:300px;
+    height: 400px;
+    background-size: cover;
 }
-#changing-text{
+
+#changing-text {
     width: 400px;
     display: inline-block;
-    text-align:left;
+    text-align: left;
+}
+
+.quality-ehs {
+    background-color: #3778A3;
+    border-radius: 5px;
+    margin-left: 10px;
+    border-width: 5px;
+    color: white;
+    width: 250px;
+    text-height: 35px;
+    padding: 14px;
+    height: 65px;
+    font-size: 18px;
+}
+
+#benefits .list-benefits {
+    text-align: center;
+    float: left;
+    width: 33%;
+    list-style: none;
+    padding: 1% 4%;
+}
+
+.three-benefits {
+    text-align: center;
+    margin: 50px 0 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+#benefits .list-benefits h4 {
+    font-size: 20px;
+    color: #666;
+    font-weight: normal;
+    margin: 0;
+}
+
+#customer-stories {
+    background-color: #ED574A;
+    clear: both;
+    margin-top: 30px;
+    padding: 100px 0;
+}
+
+button[data-controls="prev"] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+button[data-controls="next"] {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-family: 'Font Awesome 5 Free';
+}
+
+button[data-controls="next"]:after {
+    content: "\f060";
+}
+
+.tns-outer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slide-imgs {
+    width: 300px;
+    float: left;
+    margin: 60px;
+}
+
+.first-header {
+    float: auto;
+    text-align: center;
+}
+
+.slide-para {
+    margin: 2px;
+    text-align: center;
+}
+
+#customer-stories>div {
+    text-align: center;
+}
+
+.customer-stories {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 200px;
+    text-height: 35px;
+    padding: 14px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.column-4 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-8 {
+    width: 66.66%;
+    float: left;
+    color: white;
+}
+
+.customer-stories:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#video {
+    background-image: image() background:rgba(255, 255, 255, 0.8);
+}
+
+.single-source {
+    text-align: center;
+    width: 500px;
+}
+
+#images-slides .tns-outer {
+    width: 100%;
+}
+
+#images-slides {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+#video {
+    background-image: url(https://www.etq.com/images/homepage/background-video.jpg);
+    height: 420px;
+    background-size: cover;
+}
+
+.Davis-talking {
+    float: right;
+}
+
+.single-source {
+    float: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    padding: 20px;
+    font-size: 15px;
+}
+
+#video {
+    padding: 60px;
+}
+
+@media only screen and (max-width:767px) {
+    ul #search-bar {
+        display: none;
+    }
+    .single-source, .hero-container{
+        max-width: 100%;
+    }
+#benefits ul .list-benefits{
+        width:100%;
+        float:none;
+    }
+ #partner h2, #hero h1 {
+     max-width: 90% !important;
+     font-size:22px;
+ }   
 }
